@@ -3,7 +3,7 @@
 
 angular.module('$strap.directives')
 
-.directive('bsDatepicker', function($timeout, $strapConfig) {
+.directive('bsDatepicker', ['$timeout', '$strapConfig', function($timeout, $strapConfig) {
 
   var isAppleTouch = /(iP(a|o)d|iPhone)/g.test(navigator.userAgent);
 
@@ -147,4 +147,4 @@ angular.module('$strap.directives')
 
   };
 
-});
+}]);

@@ -2,7 +2,7 @@
 
 angular.module('$strap.directives')
 
-.directive('bsTimepicker', function($timeout, $strapConfig) {
+.directive('bsTimepicker', ['$timeout', '$strapConfig', function($timeout, $strapConfig) {
 
   var TIME_REGEXP = '((?:(?:[0-1][0-9])|(?:[2][0-3])|(?:[0-9])):(?:[0-5][0-9])(?::[0-5][0-9])?(?:\\s?(?:am|AM|pm|PM))?)';
 
@@ -50,4 +50,4 @@ angular.module('$strap.directives')
     }
   };
 
-});
+}]);
